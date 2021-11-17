@@ -5,10 +5,14 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderModule } from './components/header/header.module';
 import { CoverModule } from './components/cover/cover.module';
+import { AboutModule } from './sections/about/about.module';
+import { HistoricModule } from './sections/historic/historic.module';
 
 const components = [
   HeaderModule,
-  CoverModule
+  CoverModule,
+  AboutModule,
+  HistoricModule
 ]
 
 @NgModule({
