@@ -9,6 +9,9 @@ import { AboutModule } from './sections/about/about.module';
 import { HistoricModule } from './sections/historic/historic.module';
 import { SkillsModule } from './sections/skills/skills.module';
 import { EducationModule } from './sections/education/education.module';
+import { ContactModule } from './sections/contact/contact.module';
+import { FooterModule } from './components/footer/footer.module';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 const components = [
   HeaderModule,
@@ -16,7 +19,9 @@ const components = [
   AboutModule,
   HistoricModule,
   SkillsModule,
-  EducationModule
+  EducationModule,
+  ContactModule,
+  FooterModule,
 ]
 
 @NgModule({
@@ -26,6 +31,7 @@ const components = [
   imports: [
     BrowserModule,
     NgbModule,
+    NgxSpinnerModule,
     ...components
   ],
   providers: [],
